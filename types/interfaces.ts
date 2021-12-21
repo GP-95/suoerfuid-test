@@ -6,12 +6,13 @@ export interface IState {
 }
 
 export interface IServerState {
-	region: string
 	projects: Array<IProject>
 }
 
 export interface IClientState {
 	category: string
+	filter: Array<string>
+	inputFilter: string
 }
 
 export interface IProject {
@@ -19,6 +20,13 @@ export interface IProject {
 	description: string
 	icon: string
 	url: string
-	categories: Array<string>
+	categories: Array<ICategory>
 	featured: boolean
+	socials: Array<string>
+}
+
+export interface ICategory {
+	category: string
+	color: string
+	textColor: string
 }

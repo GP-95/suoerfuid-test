@@ -5,8 +5,8 @@ import { IState } from '../types/interfaces'
 import { composeWithDevTools } from 'redux-devtools-extension'
 
 const initialState: IState = {
-	client: { category: 'nft' },
-	server: { projects: [], region: 'est' },
+	client: { category: '', filter: [], inputFilter: '' },
+	server: { projects: [] },
 }
 
 const configureStore = (initialState: IState) => {
@@ -17,8 +17,5 @@ const configureStore = (initialState: IState) => {
 
 const makeStore: MakeStore<Store<IState>> = (ctx: Context) =>
 	configureStore(initialState)
-// export const store = configureStore(initialState)
-// export const store: MakeStore<Store<IState>> = (ctx: Context) =>
-// 	createStore(reducer)
 
 export const wrapper = createWrapper<Store<IState>>(makeStore, { debug: true })

@@ -1,0 +1,44 @@
+.footer {
+	background-color: var(--brand-dark);
+	min-height: 150px;
+	min-width: 100%;
+	position: relative;
+	z-index: 100;
+	position: absolute;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu {
+	list-style: none;
+	margin-left: none;
+	padding: 0;
+	color: rgb(243, 243, 243);
+}
+
+.menu > a > li {
+	margin-bottom: 6px;
+	transition: 200ms color ease-in-out;
+}
+
+.menu > a > li:hover {
+	color: var(--brand-green);
+	cursor: pointer;
+}
+
+.socials {
+	display: flex;
+	flex-direction: column;
+	margin-right: 16px;
+}
+
+.company {
+	text-align: center;
+	color: rgba(187, 187, 187, 0.712);
+
+	padding-bottom: 8px;
+}

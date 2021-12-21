@@ -1,0 +1,21 @@
+.container {
+	max-height: 80%;
+	min-width: 250px;
+	max-width: 250px;
+	margin-bottom: 4rem;
+}
+
+.paper {
+	padding: 2rem;
+}
+
+.heading {
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+	.container {
+		margin-bottom: 0rem;
+	}
+}

@@ -1,0 +1,43 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem;
+}
+
+.iconNameWrapper {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.7rem;
+}
+
+.icon {
+	margin-right: 0.7rem;
+}
+
+.name {
+}
+
+.socialIcon {
+	margin-right: 0.2rem;
+}
+
+.description {
+	margin-bottom: 1rem;
+	display: -webkit-box;
+	-webkit-line-clamp: 6;
+	line-clamp: 6;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	word-break: break-all;
+	-webkit-box-orient: vertical;
+}
+
+.readMore {
+	align-self: flex-end;
+}
+
+.nameSocialsWrapper {
+}
+
+.socialsWrapper {
+}

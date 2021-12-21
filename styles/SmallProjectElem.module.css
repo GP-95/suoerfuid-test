@@ -1,0 +1,16 @@
+.card {
+	padding: 0.7rem;
+	display: flex;
+	align-items: center;
+
+	margin-bottom: 0.7rem;
+	border: 1px solid transparent;
+}
+
+.card:hover {
+	border: 1px solid var(--brand-green);
+}
+
+.icon {
+	margin-right: 0.5rem;
+}

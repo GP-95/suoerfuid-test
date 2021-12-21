@@ -1,0 +1,70 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title {
+	margin-bottom: 0.6rem;
+}
+
+.chip {
+	margin: 0.3rem;
+	transition: 1000ms all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.gray {
+	background: gray;
+	color: white;
+}
+
+.gray:hover {
+	filter: grayscale(0.3);
+}
+
+.input {
+	margin-bottom: 0.6rem;
+}
+
+.chipsWrapper {
+	margin-bottom: 1rem;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.resetWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.resetBtn {
+}
+
+/* CHIP CLASSES */
+
+.DeFi {
+	background-color: tomato;
+	color: #ffffff;
+}
+.NFT {
+	background-color: #e0ca4b;
+	color: #ffffff;
+}
+.Gaming {
+	background-color: #6767dd;
+	color: #ffffff;
+}
+.Dex {
+	background-color: #cd0cd4;
+	color: #ffffff;
+}
+.Governance {
+	background-color: #34d40c;
+	color: #ffffff;
+}
+.Logistics {
+	background-color: #07b6a7;
+	color: #ffffff;
+}

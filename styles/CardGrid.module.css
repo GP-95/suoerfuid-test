@@ -1,7 +1,35 @@
 .grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 0.5rem;
+	padding: 0rem 0rem 3rem 0rem;
+}
 
-	padding: 3rem 0rem 3rem 0rem;
+.grid > * {
+	margin-bottom: 1rem;
+}
+
+.topStyle {
+	margin-top: 2rem;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 7rem;
+}
+
+.notFound {
+	padding: 3rem 2rem;
+}
+
+.notFoundText {
+	text-align: center;
+}
+
+/* Desktop */
+@media screen and (min-width: 500px) {
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 0.5rem;
+	}
 }

@@ -1,0 +1,76 @@
+.container {
+}
+
+.info {
+	padding: 5.5rem 0 3rem 0;
+}
+
+.title {
+	color: var(--brand-green);
+	margin-bottom: 1rem;
+}
+
+.meetTitle {
+	color: var(--brand-dark);
+	margin-bottom: 0.8rem;
+}
+
+.infoText {
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+.infoPaper {
+	padding: 1rem;
+}
+
+.btnWrapper {
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.icon {
+	margin-left: 0.3rem;
+}
+
+.exploreBtn {
+}
+
+.joinBtn {
+	color: var(--brand-dark);
+	border-color: var(--brand-dark);
+}
+
+.joinBtn:hover {
+	color: rgb(240, 183, 62);
+	border-color: rgb(240, 183, 62);
+	background-color: rgba(30, 33, 51, 0.02);
+}
+
+/* Desktop */
+@media screen and (min-width: 500px) {
+	.container {
+		display: flex;
+		justify-content: space-between;
+		gap: 0.5rem;
+	}
+
+	.title {
+		max-width: 588px;
+	}
+
+	.infoPaper {
+		max-width: 400px;
+		min-width: 380px;
+	}
+
+	.btnWrapper {
+		width: 65%;
+	}
+
+	.latest {
+		margin-top: 5rem;
+		max-width: 474px;
+	}
+}
