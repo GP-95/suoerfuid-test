@@ -17,10 +17,10 @@ function ProjectMainCard({ project }: IProps) {
 				{name}
 			</Typography>
 			<div className={style.socialsWrapper}>
-				{socials.map((social) => {
+				{socials.map((social, i) => {
 					const { icon, color } = resolveLinkIcon(social, 'medium')
 					return (
-						<Link href={social}>
+						<Link href={social} key={`social_${i}_${color}`}>
 							<a
 								style={{ color: color }}
 								className={style.social}>
